@@ -52,6 +52,7 @@ main {
 
 .lessons {
   display: flex;
+  flex-direction: column;
   gap: 46px;
   flex-wrap: wrap;
   justify-content: center;
