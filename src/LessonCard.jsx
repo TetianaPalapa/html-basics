@@ -85,3 +85,5 @@ function LessonCard({ title, description, chip, dueDate, variant }) {
     </article>
   );
 }
+
+export default LessonCard;

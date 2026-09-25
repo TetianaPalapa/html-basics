@@ -1,3 +1,5 @@
+import LessonCard from "./LessonCard";
+
 function App() {
   return (
     <main>
@@ -28,5 +30,4 @@ function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+export default App;
