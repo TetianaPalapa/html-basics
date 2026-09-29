@@ -1,3 +1,5 @@
+import Chip from "./Chip";
+
 const LESSON_VARIANTS = {
   html: {
     coverClass: "cover-html",
@@ -78,7 +80,7 @@ function LessonCard({ title, description, chip, dueDate, variant, price = "Free"
           <p className="card-description">{description}</p>
         </div>
         <div className="card-meta">
-          <span className="chip">{chip}</span>
+          <Chip label={chip} />
           <span className="price">{price}</span>
           <span className="due-date">Due Date: {dueDate}</span>
         </div>
