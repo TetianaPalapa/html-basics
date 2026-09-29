@@ -268,3 +268,21 @@ main {
   line-height: 18px;
   color: var(--text-tertiary);
 }
+
+/* --- button --- */
+.button {
+  width: 100%;
+  padding: 8px 12px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--bg-primary);
+  background-color: var(--text-on-pink);
+  border: 1px solid var(--text-on-pink);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: color-mix(in srgb, var(--text-on-pink) 85%, black);
+}

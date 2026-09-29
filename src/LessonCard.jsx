@@ -1,4 +1,5 @@
 import Chip from "./Chip";
+import Button from "./Button";
 
 const LESSON_VARIANTS = {
   html: {
@@ -84,6 +85,7 @@ function LessonCard({ title, description, chip, dueDate, variant, price = "Free"
           <span className="price">{price}</span>
           <span className="due-date">Due Date: {dueDate}</span>
         </div>
+        <Button>Start lesson</Button>
       </div>
     </article>
   );
