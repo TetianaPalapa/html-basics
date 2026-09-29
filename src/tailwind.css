@@ -20,3 +20,37 @@
   /* font family -> --font-ui (style.css) */
   --font-sans: var(--font-ui);
 }
+
+/* shadcn/ui semantic layer -> our existing semantic tokens (style.css).
+   No new colors here, purely var() pointers. The .dark block is
+   identical on purpose: dark values come from style.css's own .dark
+   override of --bg-page/--text-primary/etc, not from a second palette. */
+:root {
+  --background: var(--bg-page);
+  --foreground: var(--text-primary);
+  --primary: var(--accent-primary);
+  --muted: var(--accent-info-pink);
+  --border: var(--border-subtle);
+  --radius: var(--button-radius);
+}
+
+.dark {
+  --background: var(--bg-page);
+  --foreground: var(--text-primary);
+  --primary: var(--accent-primary);
+  --muted: var(--accent-info-pink);
+  --border: var(--border-subtle);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
