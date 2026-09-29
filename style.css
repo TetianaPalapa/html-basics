@@ -9,20 +9,20 @@
   --gray-400: #a4a2a2;
   --gray-700: #575757;
   --gray-900: #1a1a1a;
-  --green-50: #eafaf1;
-  --green-600: #1a7f4b;
+  --pink-50: #fff0f6;
+  --pink-700: #bd3770;
 
   /* text */
   --text-primary: var(--gray-900);
   --text-secondary: var(--gray-700);
   --text-tertiary: var(--gray-400);
-  --text-on-pink: var(--green-600);
-  --accent-primary: var(--green-600);
+  --text-on-pink: var(--pink-700);
+  --accent-primary: var(--pink-700);
 
   /* surfaces */
   --bg-page: var(--gray-50);
   --bg-primary: var(--white);
-  --accent-info-pink: var(--green-50);
+  --accent-info-pink: var(--pink-50);
   --border-subtle: var(--gray-100);
 
   /* card geometry */

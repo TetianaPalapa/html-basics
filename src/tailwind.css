@@ -1,0 +1,22 @@
+@import "../style.css" layer(legacy);
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  /* colors -> our :root primitives (style.css) */
+  --color-white: var(--white);
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-400: var(--gray-400);
+  --color-gray-700: var(--gray-700);
+  --color-gray-900: var(--gray-900);
+  --color-pink-50: var(--pink-50);
+  --color-pink-700: var(--pink-700);
+
+  /* spacing -> our --space-* scale (style.css); drives Tailwind's whole
+     dynamic spacing scale, e.g. p-3.5 -> calc(var(--spacing) * 3.5) */
+  --spacing: var(--space-1);
+
+  /* font family -> --font-ui (style.css) */
+  --font-sans: var(--font-ui);
+}
