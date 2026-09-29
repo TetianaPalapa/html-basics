@@ -262,3 +262,9 @@ main {
   line-height: 18px;
   color: var(--text-tertiary);
 }
+
+.price {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text-tertiary);
+}

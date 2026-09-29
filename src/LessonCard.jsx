@@ -45,7 +45,7 @@ const LESSON_VARIANTS = {
   },
 };
 
-function LessonCard({ title, description, chip, dueDate, variant }) {
+function LessonCard({ title, description, chip, dueDate, variant, price = "Free" }) {
   const v = LESSON_VARIANTS[variant];
 
   return (
@@ -79,6 +79,7 @@ function LessonCard({ title, description, chip, dueDate, variant }) {
         </div>
         <div className="card-meta">
           <span className="chip">{chip}</span>
+          <span className="price">{price}</span>
           <span className="due-date">Due Date: {dueDate}</span>
         </div>
       </div>
