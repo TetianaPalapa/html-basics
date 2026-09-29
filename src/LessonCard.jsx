@@ -48,11 +48,11 @@ const LESSON_VARIANTS = {
   },
 };
 
-function LessonCard({ title, description, chip, dueDate, variant, price = "Free" }) {
+function LessonCard({ title, description, chip, dueDate, variant, price = "Free", isDOne = false }) {
   const v = LESSON_VARIANTS[variant];
 
   return (
-    <article className="card">
+    <article className={`card${isDOne ? " is-done" : ""}`}>
       <div className={`card-cover ${v.coverClass}`} role="img" aria-label={`${v.word} lesson cover`}>
         <div className="cover-title">
           <span className={v.wordClass}>{v.word}</span>
@@ -81,7 +81,7 @@ function LessonCard({ title, description, chip, dueDate, variant, price = "Free"
           <p className="card-description">{description}</p>
         </div>
         <div className="card-meta">
-          <Chip label={chip} />
+          <Chip label={isDOne ? "Done" : chip} />
           <span className="price">{price}</span>
           <span className="due-date">Due Date: {dueDate}</span>
         </div>
