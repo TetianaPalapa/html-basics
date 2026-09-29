@@ -3,7 +3,6 @@ import LessonCard from "./LessonCard";
 function App() {
   return (
     <main>
-      <div id="tw-probe" className="bg-pink-700 p-4 p-11.5 gap-3.5 font-sans text-gray-900" />
       <section className="lessons" aria-label="Lessons">
         <LessonCard
           variant="html"
